@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf2f4;
+ font-family: "Reggae One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.intro,.links,.connect{
+    flex: 1;
+    text-align: center;
+}
+.intro{
+    text-align: left;
+
+  
+
+
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    
+
+  
+
+
+}
+.links a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    transition: background-color 0s ease, color 0s ease;
+}
+.links a:hover{
+    background-color: black;
+    color: white;
+}
+.connect{
+   
+    text-align: right;
+}
+.connect a{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #ff8800;
+    color: white;
+    transition: transform 0s ease;
+
+}
+.connect a:hover{
+    
+    transform: scale(1.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
