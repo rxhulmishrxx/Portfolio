@@ -68,3 +68,64 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     
 }
+
+.splash-screen{
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: fadeOutSplash 2s ease 2s forwards;
+
+}
+.welcome-text{
+    font-size: 10rem;
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    animation: showWelcome 2s ease 1s forwards;
+    animation-delay: 0.5s;
+    pointer-events: none;
+
+}
+.inboxwelcome{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 0;
+   pointer-events: none;
+   user-select: none;
+}
+.inboxwelcome h1{
+    font-size: 10rem;
+    color: black;
+    opacity: 1;
+}
+@keyframes showWelcome{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes fadeOutSplash{
+    0%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
