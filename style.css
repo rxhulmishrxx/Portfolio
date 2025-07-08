@@ -40,12 +40,17 @@ body {
 }
 .links a{
     padding: 10px 20px;
+    margin-right: 5px;
     text-decoration: none;
     color: black;
     border-radius: 8px;
     transition: background-color 0s ease, color 0s ease;
 }
 .links a:hover{
+    background-color: black;
+    color: white;
+}
+.links a.active{
     background-color: black;
     color: white;
 }
