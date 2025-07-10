@@ -9,3 +9,4 @@ window.addEventListener("DOMContentLoaded", () => {
     // Let your CSS animation play normally
   }
 });
+
